@@ -1,56 +1,19 @@
-# Site settings
-# These are used to personalize your new site.
-# It's good practice to fill these out.
-title: Your Awesome Website Title
-description: A brief description of your website.
-# The base hostname & protocol for your site, e.g. http://example.com
-# For user/organization pages (like your-username.github.io), this should be your GitHub Pages URL.
-url: "https://kheesu.github.io" # Replace with your actual GitHub Pages URL
-# The subpath of your site, e.g. /blog
-# For user/organization pages, this should be an empty string "" or just commented out.
-# For project pages (your-username.github.io/repository-name), it would be "/repository-name".
-#baseurl: ""
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-# Theme settings
-# This line specifies the theme to use.
-# The example uses 'pages-themes/minimal', one of GitHub's officially supported themes.
-# To use a different theme, change 'pages-themes/minimal@v0.2.0' to 'owner/theme-repository-name'.
-# Using a version tag (like @v0.2.0) is recommended for stability.
-remote_theme: pages-themes/minimal@v0.2.0
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
 
-# This line is important to ensure that GitHub Pages doesn't try to apply
-# its own default gem-based theme on top of your remote_theme, which can cause conflicts.
-theme: null
+# Setup
+title:            Heesu Kim
+description:      My personal website showcasing projects in software engineering, AI, finance, medical data, video games, and thoughts on tech.
+url:              https://kheesu.github.io
+#baseurl:          /
 
-# Plugins (optional, but jekyll-seo-tag is common and useful)
-# GitHub Pages supports a list of plugins by default.
-# jekyll-seo-tag adds metadata tags for search engines.
-plugins:
-  - jekyll-seo-tag
-  # - jekyll-feed # Uncomment if you want an Atom feed for posts
+paginate:         5
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# files yourself under the `include:` key.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Custom vars
+version:          2.1.0
 
-# Optional: Add any theme-specific configurations below.
-# For example, the 'minimal' theme doesn't have many, but other themes might.
-# Check the documentation of the theme you choose for its specific options.
-# minimal_theme_options:
-#   show_downloads: false # Example for some themes
