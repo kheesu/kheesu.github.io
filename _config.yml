@@ -5,7 +5,7 @@ email: kheesu496@gmail.com # Optional
 description: My personal website showcasing projects in software engineering, AI, finance, medical data, video games, and thoughts on tech.
 
 # Theme settings
-remote_theme: poole/hyde
+remote_theme: cotes2020/jekyll-theme-chirpy
 
 # Optional: Sidebar navigation links (add/modify these)
 sidebar_links:
