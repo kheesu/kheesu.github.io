@@ -9,9 +9,9 @@ remote_theme: poole/hyde
 
 # Optional: Sidebar navigation links (add/modify these)
 sidebar_links:
-  Portfolio: /portfolio/ # You might create a portfolio page
+  CV: /CV/
+  #GitHub: https://github.com/kheesu
   #Blog: /blog/ # Or link to your blog posts index
-  # Example link: GitHub: https://github.com/HeesuKim
 
 # Optional: Add your GitHub username for the sidebar
 github_username: kheesu
