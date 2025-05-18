@@ -11,7 +11,7 @@ My interests are in AI, finance, video games and language learning. I'm currentl
 
 This site contains the following:
 
-* [My CV](/asset/Heesu_Kim_CV.pdf) - My CV.
+* [My CV](/asset/Heesu_Kim_CV.pdf/) - My CV.
 <!---* [My Portfolio](/portfolio/) - What I've made!-->
 <!---* [My Blog](/blog/) - What I've Wrote!-->
 <!---* [More About Me](/about/) - My background.-->

@@ -9,7 +9,7 @@ remote_theme: poole/hyde
 
 # Optional: Sidebar navigation links (add/modify these)
 sidebar_links:
-  CV: /CV/
+  CV: /asset/Heesu_Kim_CV.pdf/
   #GitHub: https://github.com/kheesu
   #Blog: /blog/ # Or link to your blog posts index
 
