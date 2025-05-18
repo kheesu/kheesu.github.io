@@ -20,8 +20,8 @@ github_username: kheesu
 # theme: theme-base-08 # Example: uncomment and change to try variations
 
 # Build settings
-# plugins:
-#   - jekyll-feed # Example plugin
+plugins:
+  - jekyll-remote-theme # Example plugin
 
 # Exclude from processing.
 # The following list contains files and folders which will be skipped
