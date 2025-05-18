@@ -1,11 +1,3 @@
 title: Heesu Kim | Portfolio & Blog
 description: My personal website showcasing projects in software engineering, AI, finance, medical data, video games, and thoughts on tech.
-# baseurl: "" # the subpath of your site, e.g. /blog - leave empty for user/org pages
-# url: "https://your-username.github.io" # your site's domain
-
-# Theme Settings
 remote_theme: poole/hyde
-
-# Optional: Hyde theme specific configurations (refer to Hyde's documentation)
-# sidebar_sticky: true
-# theme_accent_color: red # Example: 'red', 'orange', 'magenta', 'cyan', 'blue', 'green'
