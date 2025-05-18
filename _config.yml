@@ -1,35 +1,11 @@
-# Site settings
 title: Heesu Kim | Portfolio & Blog
-email: kheesu496@gmail.com # Optional
 description: My personal website showcasing projects in software engineering, AI, finance, medical data, video games, and thoughts on tech.
+# baseurl: "" # the subpath of your site, e.g. /blog - leave empty for user/org pages
+# url: "https://your-username.github.io" # your site's domain
 
-# Theme settings
+# Theme Settings
 remote_theme: poole/hyde
 
-# Optional: Sidebar navigation links (add/modify these)
-sidebar_links:
-  CV: /asset/Heesu_Kim_CV.html/
-  #GitHub: https://github.com/kheesu
-  #Blog: /blog/ # Or link to your blog posts index
-
-# Optional: Add your GitHub username for the sidebar
-github_username: kheesu
-
-# Optional: Choose a Hyde theme variation (see https://hyde.getpoole.com/)
-# theme: theme-base-08 # Example: uncomment and change to try variations
-
-# Build settings
-# plugins:
-#   - jekyll-feed # Example plugin
-
-# Exclude from processing.
-# The following list contains files and folders which will be skipped
-# from processing by Jekyll.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules # if you use npm
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+# Optional: Hyde theme specific configurations (refer to Hyde's documentation)
+# sidebar_sticky: true
+# theme_accent_color: red # Example: 'red', 'orange', 'magenta', 'cyan', 'blue', 'green'
