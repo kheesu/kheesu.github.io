@@ -1,19 +1,6 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+title: Heesu Kim
+description: A place to see my projects
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+url: "https://kheesu.github.io"
 
-# Setup
-title:            Heesu Kim
-description:      My personal website showcasing projects in software engineering, AI, finance, medical data, video games, and thoughts on tech.
-url:              https://kheesu.github.io
-#baseurl:          /
-
-paginate:         5
-
-# Custom vars
-version:          2.1.0
-
+remote_theme: pages-themes/minimal@v0.2.0
