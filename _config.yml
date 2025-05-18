@@ -1,0 +1,36 @@
+# Site settings
+title: Heesu Kim | Portfolio & Blog
+email: kheesu496@gmail.com # Optional
+description: >- # this means to ignore newlines until "baseurl:"
+  My personal website showcasing projects in software engineering, AI, finance, medical data, video games, and thoughts on tech.
+
+# Theme settings
+remote_theme: poole/hyde
+
+# Optional: Sidebar navigation links (add/modify these)
+sidebar_links:
+  Portfolio: /portfolio/ # You might create a portfolio page
+  #Blog: /blog/ # Or link to your blog posts index
+  # Example link: GitHub: https://github.com/HeesuKim
+
+# Optional: Add your GitHub username for the sidebar
+github_username: kheesu
+
+# Optional: Choose a Hyde theme variation (see https://hyde.getpoole.com/)
+# theme: theme-base-08 # Example: uncomment and change to try variations
+
+# Build settings
+# plugins:
+#   - jekyll-feed # Example plugin
+
+# Exclude from processing.
+# The following list contains files and folders which will be skipped
+# from processing by Jekyll.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules # if you use npm
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
