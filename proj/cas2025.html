@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Auto Sequencer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .section-title {
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .pipeline-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        .pipeline-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .step-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #3b82f6;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 0.5rem;
+        }
+        .timeline {
+            display: flex;
+            gap: 0.5rem;
+            padding: 1rem;
+            background-color: #f3f4f6;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+        }
+        .clip {
+            padding: 1rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            text-align: center;
+            flex-shrink: 0;
+            color: #1f2937;
+            border: 2px solid transparent;
+        }
+        .a-roll {
+            background-color: #bfdbfe;
+            border-color: #60a5fa;
+        }
+        .b-roll {
+            background-color: #e5e7eb;
+            border-color: #9ca3af;
+        }
+        .arrow {
+            font-size: 2rem;
+            color: #6b7280;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-8">
+
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-900">Clip Auto Sequencer</h1>
+        </header>
+
+
+        <!-- The Problem We're Solving -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">문제 정의</h2>
+            <p class="text-gray-700 leading-relaxed">
+                기존 영상을 재편집 하는 도중 각 클립을 재배열하는 과정은 단순 반복 작업으로 충분히 자동화할 수 있는 작업입니다. 영상 흐름의 핵심적인 클립을 A-Roll 이라 지정하고 사이 구간을 자동으로 재배열하는 CAS(Clip Auto Sequencer)을 사용하면 이 반복 작업을 빠르게 완료할 수 있습니다.
+            </p>
+        </section>
+
+        <!-- Our Solution: The Automated Pipeline -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">자동화 파이프라인</h2>
+            <p class="text-gray-700 leading-relaxed mb-8">
+                저희 시스템은 다양한 머신러닝 툴을 사용한 단계들을 통해 비디오를 처리하여 그 구조와 내용을 이해합니다. 현재 작동하는 파이프라인의 각 단계는 다음과 같습니다.
+            </p>
+
+            <div class="space-y-6">
+                <!-- Step 1: Shot Detection -->
+                <div class="pipeline-step">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 flex items-center">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                            영상 해체: 클립 감지
+                        </h3>
+                        <p class="text-gray-600 mt-2">
+                            시스템은 먼저 로컬에서 실행되는 최첨단 딥러닝 모델인 <strong>TransNetV2</strong>로 비디오를 분석합니다. 이 모델은 모든 장면 전환을 정밀하게 식별하여, 연속적인 비디오 스트림을 기본적인 구성 요소인 개별 '클립'으로 분해합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2: Audio Intelligence -->
+                <div class="pipeline-step">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 flex items-center">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                            대화 이해: 오디오 인텔리전스
+                        </h3>
+                        <p class="text-gray-600 mt-2">
+                            <strong>Microsoft Azure의 AI Speech</strong> 서비스를 사용하여 비디오의 오디오 트랙을 분석합니다. 이 강력한 클라우드 AI는 전체 텍스트 스크립트를 제공하며, 결정적으로 <strong>화자 분리(Diarization)</strong>를 수행합니다. 즉, 누가 언제 말했는지를 식별하여 각 음성 구간에 "Speaker1", "Speaker2"와 같은 레이블을 붙입니다. 이것이 현재 분류 로직의 핵심 데이터입니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3: Classification -->
+                <div class="pipeline-step">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 flex items-center">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            클립 분류: 휴리스틱 분석
+                        </h3>
+                        <p class="text-gray-600 mt-2">
+                            시스템은 "주요 화자"(가장 많이 말하는 사람)를 식별합니다. 그런 다음 간단하지만 효과적인 규칙을 사용하여 각 샷을 분류합니다. 만약 주요 화자가 특정 샷에서 이야기하고 있다면 <strong>A-Roll</strong>로, 그렇지 않다면 <strong>B-Roll</strong>로 레이블을 지정합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4: Smoothing -->
+                <div class="pipeline-step">
+                    <div class="step-number">4</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 flex items-center">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            편집 논리 적용: 시계열 스무딩
+                        </h3>
+                        <p class="text-gray-600 mt-2">
+                            단일 샷의 잘못된 분류로 인해 편집 흐름이 어색해지는 것을 방지하기 위해, <strong>은닉 마르코프 모델(HMM)</strong>을 적용합니다. 이 AI 계층은 짧고 고립된 클립이 이웃 클립의 분류를 따르도록 하여 분류 결과를 부드럽게 만들고, 더 일관성 있는 영상 세그먼트를 생성함으로써 편집자의 직관을 모방합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 5: Sequencing & EDL Output -->
+                <div class="pipeline-step">
+                    <div class="step-number">5</div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 flex items-center">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            시퀀싱 및 최종 EDL 생성
+                        </h3>
+                        <p class="text-gray-600 mt-2">
+                            마지막으로, 시스템은 창의적인 시퀀싱 규칙을 적용합니다. 모든 A-Roll 샷은 원래 위치에 고정되고, 그 사이에 있는 B-Roll 샷들은 순서가 <strong>무작위로 재배치</strong>됩니다. 결과는 전문 표준인 <strong>CMX 3600 EDL 파일</strong>로 내보내지며, 이는 DaVinci Resolve와 같은 편집 소프트웨어에서 직접 가져와 편집자를 위한 사전 정리된 타임라인을 생성합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visualization of Sequencing Logic -->
+        <section class="mb-12 bg-white p-8 rounded-lg shadow-md border border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">시퀀싱 로직 시각화</h2>
+            <p class="text-gray-700 leading-relaxed mb-8">
+                다음은 저희 시스템이 A-Roll을 기준으로 B-Roll의 순서를 창의적으로 재구성하는 과정입니다.
+            </p>
+            <div class="space-y-4">
+                <div>
+                    <h4 class="font-semibold text-lg mb-2">1. 원본 타임라인</h4>
+                    <div class="timeline">
+                        <div class="clip a-roll">A-Roll 1</div>
+                        <div class="clip b-roll">B-Roll 1</div>
+                        <div class="clip b-roll">B-Roll 2</div>
+                        <div class="clip a-roll">A-Roll 2</div>
+                        <div class="clip b-roll">B-Roll 3</div>
+                        <div class="clip a-roll">A-Roll 3</div>
+                    </div>
+                </div>
+                <div class="text-center arrow">↓</div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2">2. A-Roll 고정 및 B-Roll 그룹화</h4>
+                    <p class="text-gray-600 mb-2">A-Roll 클립들은 타임라인의 '앵커' 역할을 하며 위치가 고정됩니다. 그 사이에 있는 B-Roll 클립들은 하나의 그룹으로 묶입니다.</p>
+                    <div class="timeline">
+                        <div class="clip a-roll ring-4 ring-blue-400">A-Roll 1</div>
+                        <div class="border-2 border-dashed border-gray-400 rounded-lg p-2 flex gap-2">
+                            <div class="clip b-roll">B-Roll 1</div>
+                            <div class="clip b-roll">B-Roll 2</div>
+                        </div>
+                        <div class="clip a-roll ring-4 ring-blue-400">A-Roll 2</div>
+                        <div class="border-2 border-dashed border-gray-400 rounded-lg p-2 flex gap-2">
+                            <div class="clip b-roll">B-Roll 3</div>
+                        </div>
+                        <div class="clip a-roll ring-4 ring-blue-400">A-Roll 3</div>
+                    </div>
+                </div>
+                <div class="text-center arrow">↓</div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2">3. B-Roll 그룹 내 무작위 재배치</h4>
+                    <p class="text-gray-600 mb-2">각 B-Roll 그룹 내의 클립 순서가 무작위로 섞입니다. 이는 동일한 내러티브 구간에 신선한 시각적 흐름을 제공합니다.</p>
+                    <div class="timeline">
+                        <div class="clip a-roll ring-4 ring-blue-400">A-Roll 1</div>
+                        <div class="border-2 border-dashed border-green-400 rounded-lg p-2 flex gap-2 bg-green-50">
+                            <div class="clip b-roll">B-Roll 2</div>
+                            <div class="clip b-roll">B-Roll 1</div>
+                        </div>
+                        <div class="clip a-roll ring-4 ring-blue-400">A-Roll 2</div>
+                         <div class="border-2 border-dashed border-green-400 rounded-lg p-2 flex gap-2 bg-green-50">
+                            <div class="clip b-roll">B-Roll 3</div>
+                        </div>
+                        <div class="clip a-roll ring-4 ring-blue-400">A-Roll 3</div>
+                    </div>
+                </div>
+                <div class="text-center arrow">↓</div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2">4. 최종 EDL 타임라인 생성</h4>
+                    <p class="text-gray-600 mb-2">재배치된 순서에 따라 새로운 타임라인이 생성되어 EDL 파일로 출력됩니다.</p>
+                    <div class="timeline">
+                        <div class="clip a-roll">A-Roll 1</div>
+                        <div class="clip b-roll">B-Roll 2</div>
+                        <div class="clip b-roll">B-Roll 1</div>
+                        <div class="clip a-roll">A-Roll 2</div>
+                        <div class="clip b-roll">B-Roll 3</div>
+                        <div class="clip a-roll">A-Roll 3</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Capabilities & Next Steps -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Capabilities -->
+            <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">현재 구현된 기능</h2>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li><strong class="text-blue-600">고정밀 샷 감지:</strong> 로컬 딥러닝 모델을 활용하여 비디오를 정밀하게 분할합니다.</li>
+                    <li><strong class="text-blue-600">클라우드 기반 오디오 분석:</strong> Azure AI를 활용하여 안정적인 텍스트 변환 및 화자 식별을 수행합니다.</li>
+                    <li><strong class="text-blue-600">오디오 기반 분류:</strong> 화자의 활동을 기반으로 샷을 A-Roll 또는 B-Roll로 성공적으로 분류합니다.</li>
+                    <li><strong class="text-blue-600">지능형 스무딩:</strong> HMM을 구현하여 일관성 있고 편집자 친화적인 세그먼트를 보장합니다.</li>
+                    <li><strong class="text-blue-600">전문가용 출력:</strong> 편집 워크플로우에 원활하게 통합할 수 있는 산업 표준 EDL 파일을 생성합니다.</li>
+                    <li><strong class="text-blue-600">효율적인 캐싱:</strong> 중간 결과물을 저장하여 동일한 비디오 재처리 속도를 획기적으로 향상시킵니다.</li>
+                </ul>
+            </div>
+
+            <!-- Next Steps -->
+            <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">한계점 및 다음 단계</h2>
+                <p class="text-gray-700 mb-4">현재 시스템은 강력한 기반을 제공합니다. 2단계 로드맵은 시각 및 의미 지능을 통합하여 분류 정확도를 높이는 데 중점을 둡니다.</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li><strong class="text-green-600">시각 분석 통합:</strong> 현재 모델은 "듣기"만 가능합니다. 다음 주요 단계는 <strong>Azure AI Vision</strong>을 통합하여 얼굴을 감지하고, 머리 자세를 분석하며(카메라 응시 확인), 화면 내 동작을 식별하는 것입니다. 이는 정확도를 극적으로 향상시킬 것입니다.</li>
+                    <li><strong class="text-green-600">의미 이해 구현:</strong> 다중 모드 벡터 임베딩을 사용하여 단순한 휴리스틱을 넘어설 것입니다. 이를 통해 시스템은 비디오의 주요 주제에 대한 *내러티브 관련성*을 기반으로 샷을 분류할 수 있게 되어, 보다 인간과 유사한 접근 방식을 취하게 됩니다.</li>
+                    <li><strong class="text-green-600">시퀀싱 로직 확장:</strong> 단순한 무작위 재배치를 넘어, 시각적 유사성이나 관련성에 따라 B-Roll 순서를 정하는 등 더 정교한 시퀀싱 옵션을 도입할 것입니다.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
+
