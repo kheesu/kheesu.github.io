@@ -1,0 +1,165 @@
+{
+    "app_config": {
+        "audio_config": {
+            "audio": "pipewire"
+        },
+        "bluetooth_config": {
+            "enabled": true
+        }
+    },
+    "archinstall-language": "English",
+    "auth_config": null,
+    "bootloader": "Grub",
+    "custom_commands": [],
+    "disk_config": {
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/sda",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "boot"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "e7b1006f-d8ef-4467-861b-f8e6f837ad47",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 1
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "MiB",
+                            "value": 1
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [],
+                        "fs_type": "btrfs",
+                        "mount_options": [
+                            "compress=zstd"
+                        ],
+                        "mountpoint": "/",
+                        "obj_id": "a89079e6-0498-4493-8101-2d6597a827a3",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 7515144192
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 1074790400
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": true
+            }
+        ]
+    },
+    "hostname": "archlinux",
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US.UTF-8"
+    },
+    "mirror_config": {
+        "custom_repositories": [],
+        "custom_servers": [],
+        "mirror_regions": {},
+        "optional_repositories": []
+    },
+    "ntp": true,
+    "packages": [
+        "alacritty",
+        "dunst",
+        "feh",
+        "rofi",
+        "waybar",
+        "lxappearance",
+        "noto-fonts",
+        "noto-fonts-cjk",
+        "noto-fonts-emoji",
+        "noto-fonts-extra",
+        "ttf-nerd-fonts-symbols",
+        "ttf-nerd-fonts-symbols-common",
+        "ttf-nerd-fonts-symbols-mono",
+        "ttf-firacode-nerd",
+        "firefox",
+        "firefox-addons",
+        "thunar",
+        "neovim",
+        "git",
+        "fastfetch",
+        "unzip",
+        "unrar",
+        "btop",
+        "bluez",
+        "bluez-utils",
+        "blueman",
+        "gcc",
+        "base-devel",
+        "clang",
+        "gdb",
+        "valgrind",
+        "python-pip",
+        "docker",
+        "docker-compose",
+        "python-numpy",
+        "python-pandas",
+        "python-scipy",
+        "python-pytorch",
+        "jupyter-notebook",
+        "uv",
+        "godot",
+        "blender",
+        "code"
+    ],
+    "parallel_downloads": 0,
+    "profile_config": {
+        "gfx_driver": "All open-source",
+        "greeter": "sddm",
+        "profile": {
+            "custom_settings": {
+                "Hyprland": {
+                    "seat_access": "polkit"
+                }
+            },
+            "details": [
+                "Hyprland"
+            ],
+            "main": "Desktop"
+        }
+    },
+    "script": null,
+    "services": [],
+    "swap": true,
+    "timezone": "UTC",
+    "version": "3.0.11"
+}
