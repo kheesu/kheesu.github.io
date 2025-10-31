@@ -144,8 +144,8 @@
     ],
     "parallel_downloads": 0,
     "profile_config": {
-        "gfx_driver": "null",
-        "greeter": "null",
+        "gfx_driver": null,
+        "greeter": null,
         "profile": {
             "custom_settings": {},
             "details": [],
