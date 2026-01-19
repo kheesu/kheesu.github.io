@@ -23,7 +23,7 @@ repository               : "kheesu/kheesu.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Heesu Kim"
   pronouns         : # example: "she/her"  
   bio              : "Undergrad looking for life's purpose"
