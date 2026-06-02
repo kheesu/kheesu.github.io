@@ -53,6 +53,8 @@ I am still in my early phase of my academic career, so I'm always
 looking for exposure to new ideas and research topics!
 
 - Machine Learning
-- Natural Language Processing
 - Computer Vision
+- Natural Language Processing
+- Image/Text Embeddings
+- Semantic Shift
 
