@@ -1,5 +1,5 @@
 ---
-title: "Cultural Evaluation of Large Language Models"
+title: "Cultural Evaluation of Large Language Models (Under Review)"
 collection: publications
 category: under_review
 permalink: /publication/2026-01-01-cultural-llm-eval

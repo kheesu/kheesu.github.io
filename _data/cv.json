@@ -4,7 +4,7 @@
     "email": "kheesu496@gmail.com",
     "phone": "+82-10-3865-6725",
     "website": "https://kheesu.com",
-    "summary": "Undergrad looking for life's purpose. Research interests in NLP, Cultural Bias, and Computer Vision.",
+    "summary": "Undergraduate researcher in NLP and multimodal AI. Research interests include LLM evaluation, semantic shift, multilingual NLP, machine translation, and vision-language models. Seeking PhD opportunities beginning Fall 2027.",
     "location": {
       "city": "Seoul",
       "countryCode": "KR"
@@ -68,7 +68,13 @@
       "releaseDate": "2025-10",
       "website": "https://www.arxiv.org/abs/2509.12048",
       "summary": "Developed a multi-layer trading architecture based on reinforcement learning algorithms."
-    }
+    },
+    {
+      "name": "Cultural Evaluation of Large Language Models",
+      "publisher": "Under Review — ARR 2026",
+      "releaseDate": "2026",
+      "summary": "Investigating how LLMs represent and respond to culturally grounded knowledge. Contributed to the construction and evaluation of multilingual cultural benchmark datasets."
+    },
   ],
   "portfolio": [
     {
