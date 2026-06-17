@@ -10,7 +10,7 @@ Modern foundation models learn rich representations of language, culture, and vi
 
 Benchmarks can be gamed, saturated, or misaligned with the competencies they claim to measure. I am interested in building evaluation frameworks that are sensitive to the cultural, linguistic, and semantic dimensions that standard leaderboards obscure.
 
-**Cultural Evaluation of LLMs** *(first author; under review at ACL Rolling Review, May 2026 cycle)*  
+**Cultural Evaluation of LLMs** *(first author)*  
 I led the construction of the Korean subset of a multilingual cultural-bias benchmark and evaluated current LLMs under zero-shot, chain-of-thought, and supervised fine-tuning conditions. The benchmark probes culturally situated knowledge rather than surface-level pattern matching, extending prior Japanese-only work to a multilingual setting.
 
 **Bias-a-Thon 2025 (3rd place, Track 1)**  

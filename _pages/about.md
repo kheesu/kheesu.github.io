@@ -15,7 +15,6 @@ I am interested in how linguistic, cultural, and multimodal representations emer
 
 ## News
 
-- **May 2026** — First-authored paper on multilingual cultural evaluation of LLMs submitted to ACL Rolling Review (May 2026 cycle).
 - **Oct 2025** — [Hi-DARTS](https://arxiv.org/abs/2509.12048), a hierarchical reinforcement-learning trading system I co-authored, published at ICTC 2025.
 - **Sep 2025** — Began exchange year at Hitotsubashi University; joined Prof. Mamoru Komachi's lab as an undergraduate research intern.
 - **Jul 2025** — Research intern at MARS Lab, Samsung Medical Center, working on medical object detection and segmentation.
@@ -24,7 +23,7 @@ I am interested in how linguistic, cultural, and multimodal representations emer
 
 ## Current Research
 
-**Cultural Evaluation of LLMs** *(first author; under review at ACL Rolling Review, May 2026 cycle)*  
+**Cultural Evaluation of LLMs**  
 We extend cultural-bias benchmarks for LLMs — previously limited to Japanese — to a multilingual setting. I led the construction of the Korean subset and evaluated model behavior under zero-shot prompting, chain-of-thought prompting, and supervised fine-tuning.
 
 **Semantic Shift and Representation Change**  
@@ -49,7 +48,7 @@ Please reach out at [contact@kheesu.com](mailto:contact@kheesu.com).
 
 I grew up in Seoul, South Korea, with time spent in Maryland during elementary school. I am pursuing my undergraduate degree at Sungkyunkwan University (SKKU), took a leave for military service (2023–2024) during which I served as a translator/interpreter supporting US–ROK joint operations, and am currently spending a year as an exchange student at Hitotsubashi University in Japan.
 
-On the research side, I interned at MARS Lab at Samsung Medical Center, where I fine-tuned models for detection and segmentation of post-surgery skin flaps. I then joined Prof. Mamoru Komachi's lab at Hitotsubashi University, where I work on cultural evaluation of LLMs and semantic shift detection. I also co-authored [Hi-DARTS](https://arxiv.org/abs/2509.12048), a hierarchical reinforcement-learning trading system published at ICTC 2025.
+On the research side, I interned at MARS Lab at Samsung Medical Center, where I fine-tuned models for detection and segmentation of post-surgery skin flaps. I then joined Prof. Mamoru Komachi's lab at Hitotsubashi University, where I work on multilingual NLP and semantic shift detection. I also co-authored [Hi-DARTS](https://arxiv.org/abs/2509.12048), a hierarchical reinforcement-learning trading system published at ICTC 2025.
 
 ## Hobbies
 

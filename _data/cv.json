@@ -71,9 +71,9 @@
     },
     {
       "name": "Cultural Evaluation of Large Language Models",
-      "publisher": "Under Review — ARR 2026",
+      "publisher": "Manuscript in preparation",
       "releaseDate": "2026",
-      "summary": "Investigating how LLMs represent and respond to culturally grounded knowledge. Contributed to the construction and evaluation of multilingual cultural benchmark datasets."
+      "summary": "Investigating how LLMs represent and respond to culturally grounded knowledge. Led the construction and evaluation of the Korean subset of a multilingual cultural benchmark."
     },
   ],
   "portfolio": [
