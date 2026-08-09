@@ -15,6 +15,7 @@ I am interested in how linguistic, cultural, and multimodal representations emer
 
 ## News
 
+- **Aug 2026** — Presenting a poster, "Grounding Word Senses in Vision: Multimodal Word Sense Induction," at [YANS 2026](https://yans.anlp.jp/entry/yans2026) in Sendai, Japan.
 - **Oct 2025** — [Hi-DARTS](https://arxiv.org/abs/2509.12048), a hierarchical reinforcement-learning trading system I co-authored, published at ICTC 2025.
 - **Sep 2025** — Began exchange year at Hitotsubashi University; joined Prof. Mamoru Komachi's lab as an undergraduate research intern.
 - **Jul 2025** — Research intern at MARS Lab, Samsung Medical Center, working on medical object detection and segmentation.
@@ -27,7 +28,7 @@ I am interested in how linguistic, cultural, and multimodal representations emer
 We extend cultural-bias benchmarks for LLMs — previously limited to Japanese — to a multilingual setting. I led the construction of the Korean subset and evaluated model behavior under zero-shot prompting, chain-of-thought prompting, and supervised fine-tuning.
 
 **Semantic Shift and Representation Change**  
-Working on semantic shift detection projects in Komachi Lab: measuring how lexical meaning evolves across domains and languages through the geometry of contextual embeddings.
+Working on semantic shift detection projects in Komachi Lab: measuring how lexical meaning evolves across domains and languages through the geometry of contextual embeddings. Recent work grounds word senses in vision, using image-based anchors to induce and disambiguate senses (poster at YANS 2026).
 
 **LLM Pre-training and Machine Translation**  
 Investigating how pre-training objectives and data composition influence multilingual transfer and translation performance.

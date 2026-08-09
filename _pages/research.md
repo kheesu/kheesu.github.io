@@ -21,7 +21,7 @@ Identified and mitigated demographic biases in widely used LLMs at a hackathon h
 Language is not static — words change meaning across time, domains, and communities. Contextual embeddings offer a powerful lens for studying this change, but the relationship between geometric shifts in representation space and human-interpretable meaning is not well understood.
 
 **Semantic Shift Detection** *(ongoing, Komachi Lab)*  
-Working on methods for measuring semantic change through contextual embeddings, studying how lexical meaning evolves across domains and languages.
+Working on methods for measuring semantic change through contextual embeddings, studying how lexical meaning evolves across domains and languages. Recent work grounds word senses in vision — using visual anchors built from image classes to induce and disambiguate senses across benchmarks like SemCor and SemEval (poster, YANS 2026).
 
 ## Multimodal Systems
 

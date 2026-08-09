@@ -71,10 +71,10 @@
     },
     {
       "name": "Cultural Evaluation of Large Language Models",
-      "publisher": "Manuscript in preparation",
+      "publisher": "Under review — ACL Rolling Review (August 2026 cycle)",
       "releaseDate": "2026",
       "summary": "Investigating how LLMs represent and respond to culturally grounded knowledge. Led the construction and evaluation of the Korean subset of a multilingual cultural benchmark."
-    },
+    }
   ],
   "portfolio": [
     {
