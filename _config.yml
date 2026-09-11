@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Heesu Kim"
 title_separator          : "-"
 name                     : &name "Heesu Kim"
-description              : &description "Heesu's Academic Portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Undergraduate researcher in NLP and multimodal AI, working on LLM evaluation, semantic change, multilingual NLP, and vision-language models."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : "https://kheesu.com" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -27,7 +27,7 @@ author:
   name             : "Heesu Kim"
   pronouns         : # example: "she/her"  
   bio              : "Undergraduate Researcher in NLP and Multimodal AI"
-  location         : "Tokyo"
+  location         : "Seoul"
   employer         : "Sungkyunkwan University"
   uri              : 
   email            : "contact@kheesu.com" 
@@ -86,6 +86,8 @@ author:
 publication_category:
   conferences:
     title: 'Conference Papers'
+  workshops:
+    title: 'Workshop Papers'
   under_review:
     title: 'Under Review'
 
@@ -95,7 +97,6 @@ breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -123,7 +124,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true      # no blog posts, so the feed would be empty
   path                   : # blank (default) uses feed.xml
 
 
@@ -136,12 +137,12 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter "heeesu_kim"
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
+og_image                 : "profile.jpg" # Social media default site image
 og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -153,7 +154,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               :  # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
 
@@ -168,6 +169,7 @@ exclude:
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
+  - .devcontainer
   - .github
   - .jekyll-assets-cache
   - .sass-cache
@@ -177,17 +179,20 @@ exclude:
   - CHANGELOG
   - Capfile
   - config
+  - docker-compose.yaml
   - Dockerfile
   - Gemfile
+  - Gemfile.lock
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
   - local
   - log
+  - markdown_generator
   - node_modules
   - package.json*
   - Rakefile
-  - README
+  - README.md
   - tmp
   - vendor
 keep_files:
@@ -219,13 +224,7 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -253,15 +252,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: false
-      comments: false
   # _publications
   - scope:
       path: ""
@@ -271,15 +261,6 @@ defaults:
       author_profile: true
       share: false
       comments: false
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: false
-      comment: true
   # _talks
   - scope:
       path: ""

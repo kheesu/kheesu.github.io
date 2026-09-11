@@ -15,6 +15,7 @@ I am interested in how linguistic, cultural, and multimodal representations emer
 
 ## News
 
+- **Sep 2026** — "[Retrieval Without Relevance: Prompt Dependence in Small Machine Translation Models](/publication/2026-10-01-prompt-dependence-slm)" accepted at the BabyLM Workshop at EMNLP 2026.
 - **Aug 2026** — Presenting a poster, "Grounding Word Senses in Vision: Multimodal Word Sense Induction," at [YANS 2026](https://yans.anlp.jp/entry/yans2026) in Sendai, Japan.
 - **Oct 2025** — [Hi-DARTS](https://arxiv.org/abs/2509.12048), a hierarchical reinforcement-learning trading system I co-authored, published at ICTC 2025.
 - **Sep 2025** — Began exchange year at Hitotsubashi University; joined Prof. Mamoru Komachi's lab as an undergraduate research intern.

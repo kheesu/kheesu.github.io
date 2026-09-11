@@ -1,8 +1,7 @@
 {
   "basics": {
     "name": "Heesu Kim",
-    "email": "kheesu496@gmail.com",
-    "phone": "+82-10-3865-6725",
+    "email": "contact@kheesu.com",
     "website": "https://kheesu.com",
     "summary": "Undergraduate researcher in NLP and multimodal AI. Research interests include LLM evaluation, semantic shift, multilingual NLP, machine translation, and vision-language models. Seeking PhD opportunities beginning Fall 2027.",
     "location": {
@@ -27,7 +26,7 @@
       "company": "Komachi Lab, Hitotsubashi University",
       "position": "Undergraduate Research Intern",
       "startDate": "2025-09",
-      "endDate": "2026-02",
+      "endDate": "2026-08",
       "summary": "Worked on creating a dataset for measuring cultural bias; responsible for the Korean subset of the cultural bias MQA dataset."
     },
     {
@@ -48,20 +47,26 @@
   "education": [
     {
       "institution": "Sungkyunkwan University",
-      "area": "Applied Data Science",
-      "studyType": "BS",
+      "area": "Applied Artificial Intelligence",
+      "studyType": "BEng",
       "startDate": "2021-02",
-      "endDate": "2027-02",
+      "endDate": "2027-08",
       "gpa": "4.05/4.5"
     },
     {
       "institution": "Hitotsubashi University",
       "area": "Exchange Student",
       "startDate": "2025-09",
-      "endDate": "2026-02"
+      "endDate": "2026-08"
     }
   ],
   "publications": [
+    {
+      "name": "Retrieval Without Relevance: Prompt Dependence in Small Machine Translation Models",
+      "publisher": "BabyLM Workshop at EMNLP 2026",
+      "releaseDate": "2026-10",
+      "summary": "Trained SLMs from scratch under strict rule set to measure how RAG affects machine translation. Compared the machine translation performance across several conditions such as SFT and RAG."
+    },
     {
       "name": "Hi-DARTS: Hierarchical Dynamically Adapting Reinforcement Trading System",
       "publisher": "International Conference on ICT Convergence 2025",
@@ -74,6 +79,14 @@
       "publisher": "Under review — ACL Rolling Review (August 2026 cycle)",
       "releaseDate": "2026",
       "summary": "Investigating how LLMs represent and respond to culturally grounded knowledge. Led the construction and evaluation of the Korean subset of a multilingual cultural benchmark."
+    }
+  ],
+  "presentations": [
+    {
+      "name": "Grounding Word Senses in Vision: Multimodal Word Sense Induction",
+      "date": "2026-08",
+      "event": "21st Young Researchers' Symposium on Language Processing (YANS 2026), poster",
+      "location": "Sendai, Japan"
     }
   ],
   "portfolio": [
