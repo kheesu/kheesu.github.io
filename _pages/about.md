@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-I am an undergraduate at Sungkyunkwan University (B.Eng. in Applied Artificial Intelligence, expected August 2027), currently on a year-long exchange at Hitotsubashi University in Tokyo, where I work on NLP research in Prof. Mamoru Komachi's lab.
+I am an undergraduate at Sungkyunkwan University (Bachelors in Applied Artificial Intelligence, expected August 2027). I recently completed a year-long exchange at Hitotsubashi University, where I worked on NLP research in Prof. Mamoru Komachi's lab, and have returned to Seoul.
 
 I am interested in how linguistic, cultural, and multimodal representations emerge in modern AI systems. My current research spans LLM evaluation, semantic change, multilingual NLP, and vision-language models. My long-term goal is to better understand what neural representations capture and how these representations can be evaluated and improved.
 
@@ -29,7 +29,7 @@ I am interested in how linguistic, cultural, and multimodal representations emer
 We extend cultural-bias benchmarks for LLMs — previously limited to Japanese — to a multilingual setting. I led the construction of the Korean subset and evaluated model behavior under zero-shot prompting, chain-of-thought prompting, and supervised fine-tuning.
 
 **Semantic Shift and Representation Change**  
-Working on semantic shift detection projects in Komachi Lab: measuring how lexical meaning evolves across domains and languages through the geometry of contextual embeddings. Recent work grounds word senses in vision, using image-based anchors to induce and disambiguate senses (poster at YANS 2026).
+Working on semantic shift detection projects: measuring how lexical meaning evolves across domains and languages through the geometry of contextual embeddings. Recent work grounds word senses in vision, using image-based anchors to induce and disambiguate senses (poster at YANS 2026).
 
 **LLM Pre-training and Machine Translation**  
 Investigating how pre-training objectives and data composition influence multilingual transfer and translation performance.
@@ -48,9 +48,9 @@ Please reach out at [contact@kheesu.com](mailto:contact@kheesu.com).
 
 ## Background
 
-I grew up in Seoul, South Korea, with time spent in Maryland during elementary school. I am pursuing my undergraduate degree at Sungkyunkwan University (SKKU), took a leave for military service (2023–2024) during which I served as a translator/interpreter supporting US–ROK joint operations, and am currently spending a year as an exchange student at Hitotsubashi University in Japan.
+I grew up in Seoul, South Korea, with time spent in Maryland during elementary school. I am pursuing my undergraduate degree at Sungkyunkwan University (SKKU), took a leave for military service (2023–2024) during which I served as a translator/interpreter supporting US–ROK joint operations, and recently completed a year-long exchange at Hitotsubashi University.
 
-On the research side, I interned at MARS Lab at Samsung Medical Center, where I fine-tuned models for detection and segmentation of post-surgery skin flaps. I then joined Prof. Mamoru Komachi's lab at Hitotsubashi University, where I work on multilingual NLP and semantic shift detection. I also co-authored [Hi-DARTS](https://arxiv.org/abs/2509.12048), a hierarchical reinforcement-learning trading system published at ICTC 2025.
+On the research side, I interned at MARS Lab at Samsung Medical Center, where I fine-tuned models for detection and segmentation of post-surgery skin flaps. I then joined Prof. Mamoru Komachi's lab at Hitotsubashi University, where I worked on multilingual NLP and semantic shift detection. I also co-authored [Hi-DARTS](https://arxiv.org/abs/2509.12048), a hierarchical reinforcement-learning trading system published at ICTC 2025.
 
 ## Hobbies
 
